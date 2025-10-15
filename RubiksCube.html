@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubik's Cube Solver</title>
+    <link rel="stylesheet"   href="./RubiksCube.css">
+</head>
+<body>
+    <h1>Rubik's Cube Solver</h1>
+    
+    <div class="container">
+        <div class="cube-display">
+            <h2>Current Cube State</h2>
+            <div id="cube-representation"></div>
+        </div>
+        
+        <div class="controls">
+            <h2>Controls</h2>
+            <button id="scramble-btn">Scramble Cube</button>
+            <button id="solve-btn">Solve Cube</button>
+            <button id="reset-btn">Reset Cube</button>
+            
+            <h3>Manual Rotation</h3>
+            <div class="rotation-controls">
+                <button data-move="F">F (Front)</button>
+                <button data-move="B">B (Back)</button>
+                <button data-move="U">U (Up)</button>
+                <button data-move="D">D (Down)</button>
+                <button data-move="L">L (Left)</button>
+                <button data-move="R">R (Right)</button>
+                <button data-move="F'">F' (Front')</button>
+                <button data-move="B'">B' (Back')</button>
+                <button data-move="U'">U' (Up')</button>
+                <button data-move="D'">D' (Down')</button>
+                <button data-move="L'">L' (Left')</button>
+                <button data-move="R'">R' (Right')</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="solution-steps">
+        <h2>Solution Steps</h2>
+        <div id="steps-container"></div>
+    </div>
+
+    <script src="./RubiksCube.js"></script>
+</body>
+</html>
